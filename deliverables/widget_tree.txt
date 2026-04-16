@@ -1,0 +1,56 @@
+ProductDetailsScreen (StatefulWidget)
+|- Scaffold
+|  |- AppBar
+|  |  |- leading: Padding
+|  |  |  |- CircleAvatar
+|  |  |  |  |- OutlinedButton
+|  |  |  |  |  |- Icon(arrow_back)
+|  |  |- title: Text('Details')
+|  |  |- actions[0]: Padding
+|  |  |  |- Icon(favorite/favorite_border)
+|  |- body: SingleChildScrollView
+|  |  |- Padding
+|  |  |  |- Column(crossAxisAlignment: start)
+|  |  |  |  |- SizedBox
+|  |  |  |  |- Center
+|  |  |  |  |  |- Image.network(productImage)
+|  |  |  |  |- SizedBox
+|  |  |  |  |- ListTile
+|  |  |  |  |  |- title: Text('Chair')
+|  |  |  |  |  |- trailing: Text('\$212')
+|  |  |  |  |- SizedBox
+|  |  |  |  |- Text('Minimalist Style with\\npillow')
+|  |  |  |  |- SizedBox
+|  |  |  |  |- Text(description)
+|  |  |  |  |- SizedBox
+|  |  |  |  |- Row
+|  |  |  |  |  |- _ColorDot(blue)
+|  |  |  |  |  |- SizedBox
+|  |  |  |  |  |- _ColorDot(red)
+|  |  |  |  |  |- SizedBox
+|  |  |  |  |  |- _ColorDot(green)
+|  |  |  |  |  |- SizedBox
+|  |  |  |  |  |- _ColorDot(yellow)
+|  |  |  |  |  |- SizedBox
+|  |  |  |  |  |- Expanded
+|  |  |  |  |  |  |- Container(quantity box)
+|  |  |  |  |  |  |  |- Row
+|  |  |  |  |  |  |  |  |- Expanded
+|  |  |  |  |  |  |  |  |  |- IconButton(remove)
+|  |  |  |  |  |  |  |  |- SizedBox
+|  |  |  |  |  |  |  |  |  |- TextField(readOnly, quantity)
+|  |  |  |  |  |  |  |  |- Expanded
+|  |  |  |  |  |  |  |  |  |- IconButton(add)
+|  |  |  |  |- SizedBox
+|  |  |  |  |- Row
+|  |  |  |  |  |- GestureDetector
+|  |  |  |  |  |  |- Container
+|  |  |  |  |  |  |  |- Icon(favorite/favorite_border)
+|  |  |  |  |  |- SizedBox
+|  |  |  |  |  |- Expanded
+|  |  |  |  |  |  |- Container
+|  |  |  |  |  |  |  |- Center
+|  |  |  |  |  |  |  |  |- Text('Add to cart')
+
+_ColorDot (StatelessWidget)
+|- Container(shape: circle)
